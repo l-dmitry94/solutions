@@ -1,13 +1,248 @@
 :root {
-    --white: #FFFFFF;
-    --blue: #204959;
-    --dark-green: #217191;
-    --black: #131414;
-    --light-blue: #D9EBF1;
-    --light-green: #EDF1F2;
-    --brown: #C7A48B;
+  --white: #ffffff;
+  --blue: #204959;
+  --dark-green: #217191;
+  --black: #131414;
+  --light-blue: #d9ebf1;
+  --light-green: #edf1f2;
+  --brown: #c7a48b;
+  --transition: 300ms ease-in-out;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:regular&display=swap");
-@import url("reset");
+@import "reset";
+
+body {
+  font-family: "Montserrat";
+  background-color: #fbfbfb;
+  color: var(--black);
+}
+
+.header__container {
+  min-width: 320px;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: var(--white);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 60px;
+  border: 1px solid #c7c7c7;
+  transition: background-color var(--transition), border-color var(--transition);
+}
+
+.header {
+  background-color: var(--blue);
+  padding-top: 40px;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+  }
+
+  &__dropdown {
+  }
+
+  &__dropdown-item {
+  }
+
+  &__dropdown-link {
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__burger {
+  }
+
+  &__burger-icon {
+    width: 37px;
+    height: 37px;
+    stroke: var(--white);
+  }
+}
+
+.logo {
+  &__icon {
+    width: 190px;
+    height: 47px;
+    fill: var(--white);
+  }
+}
+
+.hero {
+  height: 786px;
+  background-image: url(../img/hero/mobile-hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 375px;
+  background-color: var(--blue);
+  border-radius: 0px 0px 20px 20px;
+
+  &__block {
+    padding-top: 104px;
+  }
+
+  &__info {
+  }
+
+  &__info-label {
+    display: inline-block;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.45;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #3c6373;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+
+  &__info-title {
+    color: var(--white);
+    font-size: 27px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+  }
+
+  &__info-text {
+    color: var(--white);
+    line-height: 1.67;
+    margin-bottom: 45px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__buttons-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child .hero__buttons-link {
+      background-color: var(--brown);
+      border-color: transparent;
+      &:is(:hover, :focus) {
+        background-color: #a97957;
+      }
+    }
+  }
+
+  &__buttons-link {
+    width: 163px;
+    color: var(--white);
+    padding: 15px 0;
+
+    &:is(:hover, :focus) {
+      background-color: var(--brown);
+      border-color: transparent;
+    }
+  }
+}
+
+.about {
+  padding: 100px 0 40px;
+
+  &__block {
+  }
+
+  &__wrapper {
+  }
+
+  &__block-title {
+    margin-bottom: 55px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.45;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__title-color {
+    color: var(--dark-green);
+  }
+
+  &__button-desktop {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-bottom: 55px;
+  }
+
+  &__list-item {
+  }
+
+  &__item-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    line-height: 1.67;
+  }
+
+  &__button {
+    transition: background-color var(--transition);
+    &:is(:hover, :focus) {
+      background-color: #185D78;
+    }
+  }
+
+  &__button-mobile {
+    width: 100%;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 60px;
+    background-color: var(--dark-green);
+    padding: 20px 0;
+  }
+}
+
+@import "media";
