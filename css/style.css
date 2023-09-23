@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:regular&display=swap");
+@import url("reset");
+:root {
+  --white: #FFFFFF;
+  --blue: #204959;
+  --dark-green: #217191;
+  --black: #131414;
+  --light-blue: #D9EBF1;
+  --light-green: #EDF1F2;
+  --brown: #C7A48B;
+}
