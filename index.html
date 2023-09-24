@@ -5,15 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="container">
             <div class="header__block">
                 <a class="logo" href="./">
                     <svg class="logo__icon">
@@ -30,6 +28,9 @@
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#">
                                 Products
+                                <svg class="header__menu-link-arrow">
+                                    <use href="./img/icons.svg#icon-menu-arrow"></use>
+                                </svg>
                             </a>
                             <ul class="header__dropdown">
                                 <li class="header__dropdown-item">
@@ -46,163 +47,17 @@
                         </li>
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#">
-                                Resources
+                                Resourcess
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <button class="btn header__button" type="button">
+                <a class="header__link" href="#">
                     Contact Us
-                </button>
-                <button class="header__burger" type="button">
-                    <svg class="header__burger-icon">
-                        <use href="./img/icons.svg#icon-burger"></use>
-                    </svg>
-                </button>
+                </a>
             </div>
-
         </div>
     </header>
-
-    <main>
-
-        <section class="hero">
-            <div class="container">
-                <div class="hero__block">
-                    <div class="hero__info">
-                        <span class="hero__info-label">
-                            ID Al. Solutions
-                        </span>
-                        <h1 class="hero__info-title">
-                            Synergy of Expertise
-                            Integrity in Partnership
-                            Ideal Solutions - as a Standard
-                        </h1>
-                        <p class="hero__info-text">
-                            Experienced team of innovators and
-                            developers bringing new products to life
-                        </p>
-                        <ul class="hero__buttons">
-                            <li class="hero__buttons-item">
-                                <a class="btn hero__buttons-link" href="#">
-                                    Get in touch
-                                </a>
-                            </li>
-                            <li class="hero__buttons-item">
-                                <a class="btn hero__buttons-link" href="#">
-                                    Services
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <div class="about__block">
-                    <div class="about__wrapper">
-                        <div class="about__block-title">
-                            <span class="about__text">
-                                Why choose us?
-                            </span>
-                            <h2 class="about__title">
-                                <span class="about__title-color">ideal software</span> solutions Only
-                            </h2>
-                        </div>
-                        <button class="about__button about__button-desktop" type="button">
-                            About Us
-                        </button>
-                    </div>
-                    <ul class="about__list">
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-1"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                Vast Experience
-                            </h3>
-                            <p class="about__item-text">
-                                Over 5 years of experience in software 
-                                development, covering a variety of 
-                                business domains
-                            </p>
-                        </li>
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-2"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                сustomer focus
-                            </h3>
-                            <p class="about__item-text">
-                                We strive to bring the greatest value for 
-                                our client through the best-quality and 
-                                on-time work
-                            </p>
-                        </li>
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-3"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                Full Agility
-                            </h3>
-                            <p class="about__item-text">
-                                Adjusting to your preferences and
-                                 requirements in order to maximize the 
-                                 efficiency of cooperation
-                            </p>
-                        </li>
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-2"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                сustomer focus
-                            </h3>
-                            <p class="about__item-text">
-                                We strive to bring the greatest value for 
-                                our client through the best-quality and 
-                                on-time work
-                            </p>
-                        </li>
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-3"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                Full Agility
-                            </h3>
-                            <p class="about__item-text">
-                                Adjusting to your preferences and
-                                 requirements in order to maximize the 
-                                 efficiency of cooperation
-                            </p>
-                        </li>
-                        <li class="about__list-item">
-                            <svg class="about__item-icon">
-                                <use href="./img/icons.svg#icon-about-1"></use>
-                            </svg>
-                            <h3 class="about__item-title">
-                                Vast Experience
-                            </h3>
-                            <p class="about__item-text">
-                                Over 5 years of experience in software 
-                                development, covering a variety of 
-                                business domains
-                            </p>
-                        </li>
-                    </ul>
-                    <button class="about__button about__button-mobile" type="button">
-                        About Us
-                    </button>
-                </div>
-            </div>
-        </section>
-
-    </main>
 
     <script src="./js/script.js" type="module"></script>
 </body>
